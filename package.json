@@ -1,14 +1,64 @@
 {
+  "name": "hardhat-practice",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-moltak:moltak/practice-hardhat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "@typechain/ethers-v5": "^9.0.0",
+    "@typechain/hardhat": "^4.0.0",
     "@types/jest": "^27.4.0",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.4",
     "hardhat": "^2.8.4",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "ts-generator": "^0.1.1",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.5.0",
+    "typechain": "^7.0.0",
+    "typescript": "^4.5.5"
   },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.5.0"
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
   }
 }
