@@ -1,15 +1,19 @@
 # Basic Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+자세한 내용 보기 [2022-02-12 3차 과제 hardhat tutorial](https://www.notion.so/engeng/2022-02-12-3-hardhat-tutorial-4c88ea31b66348858001947841749e27)
 
-Try running some of the following tasks:
+## 간략 설명
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+hardhat, typescript를 이용한 컨트랙트 개발.
+
+포함된 내용
+
+- hardhat project 세팅
+- typescript 연동
+- jest 연동 - 테스트 실행
+- ropsten에 컨트랙트 배포
+- etherscan 연동
+
+### 결과물
+
+https://ropsten.etherscan.io/address/0xEcc5a98fe7062dD42Fa3a98CD044980De18d045F#code
