@@ -1,5 +1,7 @@
-npx hardhat verify --network ropsten \
-"0xc43d9eADe2CeDD26B4fD7fCF17CE2530e85035FC" \
+npx hardhat verify \
+--network ropsten \
+--contract "contracts/asset-token.sol:AssetToken" \
+"0xEcc5a98fe7062dD42Fa3a98CD044980De18d045F" \
 "10000" \
-"FirstAssetToken" \
-"FAT"
+"SparrowEggToken" \
+"SET"

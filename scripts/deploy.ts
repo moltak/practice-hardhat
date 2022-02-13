@@ -6,8 +6,8 @@ async function main() {
   const AssetToken = await hardhat.ethers.getContractFactory('AssetToken')
   const assetToken = await AssetToken.deploy(
     10000, // totalSupply
-    'FirstAssetToken', // Token name
-    'FAT' // Token symbol
+    'SparrowEggToken', // Token name
+    'SET' // Token symbol
   )
   console.log(`AssetToken address:${assetToken.address}`)
 }
